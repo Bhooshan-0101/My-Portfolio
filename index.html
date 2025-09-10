@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhooshan A - Full-Stack Developer & Data Analyst</title>
+    <meta name="description" content="Bhooshan A - Full-Stack Developer, Data Analyst, and Problem Solver. Master's in Computer Applications with expertise in React, Node.js, Python, and Power BI.">
+    <meta name="keywords" content="Full-Stack Developer, Data Analyst, React, Node.js, Python, Power BI, Web Developer">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span>B</span>
+                </div>
+                <span class="logo-text">Bhooshan A</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="assets/Bhooshan_Resume.pdf" download class="btn btn-outline">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>👋 Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">Bhooshan A</h1>
+                    <div class="typing-wrapper">
+                        <span class="typing-prefix">I'm a </span>
+                        <span class="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">A highly motivated postgraduate with strong foundations in designing and developing scalable applications, complemented by skills in data handling and analytical problem-solving.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <span class="social-label">Follow me on:</span>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/bhooshan-a-b718b3302/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/bhooshan-0101" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:bhooshan0114@gmail.com" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hero-image-bg"></div>
+                        <div class="floating-icons">
+                            <div class="float-icon" style="--delay: 0s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="float-icon" style="--delay: 1s">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="float-icon" style="--delay: 2s">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="float-icon" style="--delay: 3s">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="float-icon" style="--delay: 4s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                        </div>
+                        <div class="code-lines">
+                            <div class="code-line" style="--width: 80%; --delay: 0.5s"></div>
+                            <div class="code-line" style="--width: 60%; --delay: 1s"></div>
+                            <div class="code-line" style="--width: 90%; --delay: 1.5s"></div>
+                            <div class="code-line" style="--width: 70%; --delay: 2s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and journey</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="assets/profile.jpg" alt="Bhooshan A - Full-Stack Developer" id="profile-image" />
+                        <div class="image-overlay">
+                            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                            <button class="upload-btn" onclick="document.getElementById('image-upload').click()">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h3>Let's work together!</h3>
+                        <p>Available for full-time opportunities and freelance projects</p>
+                        <a href="assets/Bhooshan_Resume.pdf" download class="btn btn-primary btn-small">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Hi there! I'm Bhooshan</h3>
+                        <p>I'm a passionate developer with a Master's in Computer Applications and hands-on experience in full-stack development, data analytics, and mobile app development. I love creating efficient digital solutions that address real-world challenges and am always eager to learn new technologies.</p>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h4>🎓 Education Journey</h4>
+                        <div class="education-timeline">
+                            <div class="education-item">
+                                <div class="education-year">2023-2025</div>
+                                <div class="education-details">
+                                    <h5>Master of Computer Applications</h5>
+                                    <p>ST Joseph Engineering College, Mangalore</p>
+                                    <span class="grade">CGPA: 7.33</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-year">2020-2023</div>
+                                <div class="education-details">
+                                    <h5>Bachelor of Computer Applications</h5>
+                                    <p>Sharada College, Talapady Mangalore</p>
+                                    <span class="grade">CGPA: 6.73</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-section">
+                        <h4>💼 Professional Experience</h4>
+                        <div class="experience-timeline">
+                            <div class="experience-item">
+                                <div class="experience-period">May - Jul 2025</div>
+                                <div class="experience-details">
+                                    <h5>Software Development Intern</h5>
+                                    <p>Softionik Solutions (OPC) Pvt. Ltd.</p>
+                                    <span class="experience-desc">Worked on SportsLine platform using React.js, Node.js, Express.js, and MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <div class="experience-period">Nov 2024</div>
+                                <div class="experience-details">
+                                    <h5>Web Developer Intern</h5>
+                                    <p>St. Joseph Engineering College (SJEC)</p>
+                                    <span class="experience-desc">Contributed to real-time web-based projects, strengthened React.js and MongoDB skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-info">
+                        <h4>📍 Personal Information</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kasaragod, Kerala, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>bhooshan0114@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 7736796842</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Available for opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and personal projects</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">AuraX</h3>
+                            <p class="project-subtitle">AI Salon Booking System</p>
+                        </div>
+                        <p class="project-description">Online Salon Booking & AI Recommendation System with facial recognition technology for personalized skincare and hairstyle recommendations. Built with role-based modules for users, salon owners, and stylists.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>AI Powered</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>Multi-role</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">TMDB Movie Analytics</h3>
+                            <p class="project-subtitle">Data Analytics Dashboard</p>
+                        </div>
+                        <p class="project-description">Comprehensive analytics dashboard for movie data analysis using Power BI. Features interactive visualizations showcasing trends in directors, genres, and movie profits with advanced data processing capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">Data Analytics</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Analytics</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-database"></i>
+                                <span>Big Data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">SportsLine</h3>
+                            <p class="project-subtitle">E-commerce Platform</p>
+                        </div>
+                        <p class="project-description">Full-stack sports event management and merchandise platform developed during internship at Softionik Solutions. Features secure authentication, inventory management, event booking, and order tracking capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Question Paper Generator</h3>
+                            <p class="project-subtitle">Educational System</p>
+                        </div>
+                        <p class="project-description">Dynamic question paper generation system with academic mapping support for COs, POs, and Bloom's Taxonomy. Simplifies paper creation process for educational institutions and educators.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-cogs"></i>
+                                <span>Automated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Yathra Bus Pass System</h3>
+                            <p class="project-subtitle">Management System</p>
+                        </div>
+                        <p class="project-description">Digital bus pass management system with integrated authentication and automated reporting features. Enhances efficiency in public transportation pass management and tracking systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-bus"></i>
+                                <span>Transport</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-id-card"></i>
+                                <span>Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies and tools I work with to create amazing digital solutions</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React Native</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database & Analytics</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Android Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-word"></i>
+                            <span>MS Office</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certifications</h3>
+                    </div>
+                    <div class="certifications-list">
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">UX/UI Design Principles</span>
+                                <span class="cert-provider">Coursera</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">Data Visualization with Power BI</span>
+                                <span class="cert-provider">Great Learning</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fab fa-js"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">Programming with JavaScript</span>
+                                <span class="cert-provider">Coursera</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">Full-Stack Web Development</span>
+                                <span class="cert-provider">Udemy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <span class="contact-badge">CONTACT</span>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind or just want to connect? I'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-left">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+917736796842" class="method-value">+91 7736796842</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:bhooshan0114@gmail.com" class="method-value">bhooshan0114@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Kasaragod, Kerala, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h4>Connect with me on social media</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/bhooshan-0101" target="_blank" class="social-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/bhooshan-a-b718b3302/" target="_blank" class="social-link linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:bhooshan0114@gmail.com" class="social-link email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-right">
+                    <div class="thank-you-card">
+                        <div class="card-header">
+                            <h3>Thank You</h3>
+                            <div class="header-decoration"></div>
+                        </div>
+                        <p>Thank you for visiting my portfolio! I appreciate your time and interest. I'm always excited to discuss new opportunities and collaborate on innovative projects.</p>
+                        
+                        <div class="availability-info">
+                            <div class="availability-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available for full-time opportunities</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Open to freelance projects</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ready to relocate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>B</span>
+                        </div>
+                        <span class="logo-text">Bhooshan A</span>
+                    </div>
+                    <p>Full-Stack Developer & Data Analyst passionate about creating innovative digital solutions that make a difference.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <div class="links-grid">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                        <a href="assets/Bhooshan_Resume.pdf" download>Resume</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <span>📧 bhooshan0114@gmail.com</span>
+                        <span>📱 +91 7736796842</span>
+                        <span>📍 Kasaragod, Kerala, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Bhooshan A. All rights reserved. Built with ❤️ using HTML, CSS & JavaScript</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/bhooshan-a-b718b3302/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/bhooshan-0101" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:bhooshan0114@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
