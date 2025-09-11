@@ -27,9 +27,6 @@
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-cta">
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="assets/Bhooshan_Resume.pdf" download class="btn btn-outline">
                     <i class="fas fa-download"></i> Resume
                 </a>
@@ -92,11 +89,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
-        </div> -->
     </section>
 
     <!-- About Section -->
@@ -110,13 +102,10 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="assets/profile.jpg" alt="Bhooshan A - Full-Stack Developer" id="profile-image" />
-                        <div class="image-overlay">
-                            <input type="file" id="image-upload" accept="image/*" style="display: none;">
-                            <button class="upload-btn" onclick="document.getElementById('image-upload').click()">
-                                <i class="fas fa-camera"></i>
-                            </button>
-                        </div>
+                        <img src="assets/profile.jpg" 
+                             alt="Bhooshan A - Full-Stack Developer" 
+                             id="profile-image" 
+                             onerror="this.src='https://via.placeholder.com/400x400/00d4ff/ffffff?text=B'" />
                     </div>
                     <div class="about-card">
                         <h3>Let's work together!</h3>
