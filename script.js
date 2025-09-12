@@ -1,4 +1,17 @@
-// Mobile Navigation
+// ===== UTILITY FUNCTIONS =====
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// ===== MOBILE NAVIGATION =====
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
@@ -16,7 +29,7 @@ if (hamburger && navMenu) {
     });
 }
 
-// Navbar scroll effect
+// ===== NAVBAR SCROLL EFFECT =====
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
@@ -28,7 +41,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Active navigation link
+// ===== ACTIVE NAVIGATION LINK =====
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -44,13 +57,13 @@ window.addEventListener('scroll', () => {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {  // Fixed template literal
+        if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     });
 });
 
-// Project Filter - Working Version
+// ===== PROJECT FILTER =====
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -73,14 +86,14 @@ filterButtons.forEach(button => {
     });
 });
 
-// Initialize - show all projects by default
+// ===== INITIALIZE PROJECTS =====
 document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => {
         card.classList.add('show');
     });
 });
 
-// Typing animation
+// ===== TYPING ANIMATION =====
 const typedText = document.querySelector('.typed-text');
 if (typedText) {
     const textArray = [
@@ -122,12 +135,12 @@ if (typedText) {
     setTimeout(type, newTextDelay + 250);
 }
 
-// Smooth scrolling for anchor links
+// ===== SMOOTH SCROLLING =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) {  // Fixed: Added missing parenthesis
+        if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -136,7 +149,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Image error handling
+// ===== IMAGE ERROR HANDLING =====
 document.addEventListener('DOMContentLoaded', () => {
     const profileImage = document.getElementById('profile-image');
     if (profileImage) {
@@ -146,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Intersection Observer for animations
+// ===== INTERSECTION OBSERVER FOR ANIMATIONS =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -168,7 +181,7 @@ document.querySelectorAll('.project-card, .skills-category, .cert-card, .achieve
     observer.observe(el);
 });
 
-// Close mobile menu when clicking outside
+// ===== CLOSE MOBILE MENU WHEN CLICKING OUTSIDE =====
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-container')) {
         if (navMenu) navMenu.classList.remove('active');
@@ -176,11 +189,10 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Enhanced responsive behavior
+// ===== RESPONSIVE BEHAVIOR =====
 function handleResize() {
     const viewport = window.innerWidth;
     
-    // Close mobile menu on resize
     if (viewport > 768) {
         if (navMenu) navMenu.classList.remove('active');
         if (hamburger) hamburger.classList.remove('active');
@@ -189,12 +201,12 @@ function handleResize() {
 
 window.addEventListener('resize', handleResize);
 
-// Initialize on load
+// ===== INITIALIZE ON LOAD =====
 document.addEventListener('DOMContentLoaded', () => {
     handleResize();
 });
 
-// Fixed console.log - removed markdown formatting
+// ===== SUCCESS MESSAGE =====
 console.log(`
 🚀 Portfolio Website Loaded Successfully!
 👨‍💻 Developed by: Bhooshan A
